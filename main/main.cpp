@@ -17,7 +17,6 @@ int main() {
         if (array[i] > array[max]) max = i;
         if (array[i] < array[min]) min = i;
         //sleep
-        std::this_thread::sleep_for(2000ms);
     }
 
     std::cout << "min: " << array[min] << " max: " << array[max];
@@ -38,7 +37,5 @@ int main() {
     }
 
     delete [] array;
-
-
     return 0;
 }
