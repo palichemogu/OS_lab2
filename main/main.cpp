@@ -1,4 +1,5 @@
 #include <iostream>
+#include "windows.h"
 
 int main() {
     int size;
@@ -17,6 +18,7 @@ int main() {
         if (array[i] > array[max]) max = i;
         if (array[i] < array[min]) min = i;
         //sleep
+        Sleep(7);
     }
 
     std::cout << "min: " << array[min] << " max: " << array[max];
@@ -26,6 +28,7 @@ int main() {
     for (int i = 0; i < size; i++) {
         average += array[i];
         //sleep
+        Sleep(12);
     } average /= size;
 
     std::cout << " average: " << average << std::endl;
@@ -38,4 +41,5 @@ int main() {
 
     delete [] array;
     return 0;
+    //CreateThread()
 }
